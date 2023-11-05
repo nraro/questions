@@ -12,7 +12,7 @@ function App() {
   }
 
   const handleInputText = (e) => {
-    setGetInputText({value: e.target.value, questionType: 'primary'});
+    setGetInputText({...getInputText, value: e.target.value});
   }
 
   const handleDoneQuestion = (e) => {
